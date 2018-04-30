@@ -34,7 +34,7 @@ public class EnvioCorreo {
             Session sesion = Session.getInstance(propiedades, null);
             MimeMessage  mensaje = new MimeMessage(sesion);
             mensaje.setFrom(new InternetAddress(correoOrigen));
-            mensaje.setRecipient(Message.RecipientType.TO, new InternetAddress("matteohenao36@gmail.com"));
+            mensaje.setRecipient(Message.RecipientType.TO, new InternetAddress("corpexforzarse@hotmail.com"));
             mensaje.setSubject("Mensaje de "+usuario.getNombre());
             mensaje.setText(usuario.getMensaje()+" \nDe: "+usuario.getNombre()+" \nCorreo: "+usuario.getCorreo()+" \nTeléfono "+usuario.getTelefono());
             
